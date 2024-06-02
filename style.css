@@ -1,0 +1,102 @@
+*{
+ padding: 0;
+ margin: 0;
+}
+.body{
+  background-image: url("/images.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.board{
+    background-color: black;
+    width: 49vmin;
+    height: 50vmin;
+    border: 2px  solid white;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background-color: white;
+
+
+}
+.snb{
+    background-color: orange;
+    border-radius: 10px;
+}
+.food{
+    background-color: red;
+    border-radius: 15px;
+}
+.score{
+    display: flex;
+    background-color: black;
+    padding: 10px 30px;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#sc{
+    margin-left: 10px;
+}
+/* .controls button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+} */
+#up{
+    padding: 8px;
+    margin: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#uc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lr{
+    padding: 8px;
+    margin: 4px;
+    font-size: 16px;
+    cursor: pointer; 
+}
+#right{
+    padding: 6px;
+    margin: 4px;
+    font-size: 16px;
+    cursor: pointer; 
+}
+#dc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#down{
+    padding: 6px;
+    margin: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+i{
+    font-size: 30px;
+}
+@media (max-width: 768px) {
+    #controls {
+        display: flex;
+    }
+}
