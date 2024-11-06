@@ -107,17 +107,21 @@ window.addEventListener('keydown', e => {
 // Add event listeners for buttons
 document.getElementById('up').addEventListener('click', () => {
     moveSound.play()
+    backgroundSound.play();
     inputDir = { x: 0, y: -1 };
 });
 document.getElementById('down').addEventListener('click', () => {
     moveSound.play()
+    backgroundSound.play();
     inputDir = { x: 0, y: 1 };
 });
 document.getElementById('left').addEventListener('click', () => {
     moveSound.play();
+    backgroundSound.play();
     inputDir = { x: -1, y: 0 };
 });
 document.getElementById('right').addEventListener('click', () => {
     moveSound.play()
+    backgroundSound.play();
     inputDir = { x: 1, y: 0 };
 });
